@@ -44,7 +44,7 @@ n_posts = [
 def home(request) :
 
   context = {
-      'n_posts' : n_posts,
+      
       'title': 'Nyumbakumi'
     }
 
@@ -56,6 +56,7 @@ def home(request) :
 def neighbor(request) :
 
   context = {
+      'n_posts' : n_posts,
       'title': 'Neighbor'
     }
 

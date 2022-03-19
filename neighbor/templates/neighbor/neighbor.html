@@ -4,6 +4,18 @@
 
 {% block content %} 
 
-    <h1>Neighbor Page</h1>
+  <h1 id="test">Neighbor Page</h1>
+
+  {% for post in n_posts %}
+      <h1>
+        {{ post.n_title }}
+      </h1>
+      <p>
+        {{ post.n_update }}
+      </p>
+      <small>
+        By {{ post.n_author }}
+      </small>
+    {% endfor %}
 
 {% endblock content %}  
