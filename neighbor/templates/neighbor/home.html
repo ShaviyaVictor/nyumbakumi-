@@ -3,8 +3,52 @@
 
 
 {% block content %}    
-    <h1>Home Page</h1>
+  
+  <!-- Form start -->
+  <div class="logform content-section container mt-5">
 
+    <div class="row">
+
+      <div class="col-sm-6 mx-auto">
+
+        <form method="POST" action="">
+          
+          <!-- Add si-rf tokns here -->
     
+          <fieldset class="form-group">
+            <legend class="border-bottom mb-4">
+              Login
+            </legend>
+    
+            <!-- Add krispi forms variable here -->
+
+          </fieldset>
+    
+          <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">
+              LOGIN
+            </button>
+            <small class="text-muted ml-2">
+              <a href="#">
+                Forgot password?
+              </a>
+            </small>
+          </div>
+    
+        </form>
+    
+        <div class="border-top pt-3">
+    
+          <small class="text-muted">
+            Don't have an account?<a href="#" class="ml-2">Register</a>
+          </small>
+    
+        </div>
+  
+      </div>
+
+    </div>
+
+  </div>
 
 {% endblock content %}  
