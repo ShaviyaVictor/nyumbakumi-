@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html>
 
@@ -12,6 +15,9 @@
 
     <!-- Importing the Bootastrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS styles for the project -->
+    <link rel="stylesheet" type="text/css" href="{% static 'neighbor/main.css' %}">
 
     {% if title %}
       <title>
@@ -159,7 +165,7 @@
             </a>
           </small>
           <h6 class="small text-dark mt-3">
-            Copyright &copy; 2022 || All Rights Reserved. ||  VictorShaviya - ShawardS 
+            Copyright &copy; 2022 || All Rights Reserved. ||  VictorShaviya - nyumbakumi! 
           </h6>
         </div>
   
