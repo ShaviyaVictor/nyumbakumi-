@@ -6,22 +6,22 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request) :
 
-  return HttpResponse('<h1>Home Page</h1>')
+  return render(request, 'neighbor/home.html')
 
 
 
 def neighbor(request) :
 
-  return HttpResponse('<h1>Neighbors Page</h1>')
+  return render(request, 'neighbor/neighbor.html')
 
 
 
 def agency(request) :
 
-  return HttpResponse('<h1>Agency Page</h1>')
+  return render(request, 'neighbor/agency.html')
 
 
 
 def business(request) :
 
-  return HttpResponse('<h1>Business Page</h1>')
+  return render(request, 'neighbor/business.html')
