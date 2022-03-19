@@ -26,6 +26,92 @@
 
   </head>
   <body>
+
+    {% block header %}    
+    <!-- Start of the Navbar section -->
+
+
+    <header class="site-header">
+
+      <nav class="navbar navbar-expand-md navbar-light bg-steel fixed-top border-bottom">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5" href="{% url 'neighbor-home' %}">
+            <h6 class="logo">
+              nyumbakumi
+            </h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">            
+            <div class="navbar-nav mr-auto font-weight-bold">
+              <a class="nav-item nav-link" href="{% url 'neighbor-home' %}">
+                HOME
+              </a>
+              <a class="nav-item nav-link" href="{% url 'neighbor-neighbor' %}">
+                NEIGHBORS
+              </a>
+              <a class="nav-item nav-link" href="{% url 'neighbor-agency' %}">
+                AGENCY
+              </a>
+              <a class="nav-item nav-link" href="{% url 'neighbor-business' %}">
+                BUSINESS
+              </a>
+
+
+
+
+              <!-- Removed content section for the Navbar -->
+
+              <!-- Profile section -->
+              <a class="nav-item nav-link" href="#">
+                PROFILE
+              </a>
+
+              
+
+            </div>
+
+
+              <!-- Navbar Right Side section -->
+              <div class="navbar-nav font-weight-bold">
+
+                
+                <a class="nav-item nav-link mr-3" href="#">POST</a>
+  
+                <a class="nav-item nav-link mr-3" href="#">REGISTER/LOGIN</a>
+  
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Find a photo..." aria-label="Search">
+                </form>
+                
+                
+              </div>
+  
+              <div class="navbar-nav font-weight-bold">
+  
+                <a class="nav-item nav-link" href="#">
+                  LOGOUT
+                </a>
+  
+  
+              </div>
+
+            
+
+
+          </div>
+        </div>
+
+      </nav>
+
+    </header>
+
+    
+    {% endblock %}
+    <!-- End of the NavBar -->
     
     {% block content %}
 
