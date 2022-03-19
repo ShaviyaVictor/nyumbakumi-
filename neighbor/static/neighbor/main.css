@@ -12,16 +12,18 @@ font-family: 'Marcellus', serif; */
 
 
 body {
-  background: #F4F7F6;
+  background: #FFF;
   margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Old Standard TT',
+  font-family: 'Old Standard TT', serif;
+  color: #18422E;
 }
 
 p {
   font-family: 'Karma', serif;
+  color: #18422E;
 }
 
 a, button {
@@ -38,7 +40,7 @@ a, button {
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #33A2B8;
+  color: #8ED52E ;
   text-decoration: underline;
 }
 
@@ -82,7 +84,7 @@ a {
 }
 
 .futa:hover {
-  color: #3163EF !important;
+  color: #8ED52E  !important;
 }
 
 
