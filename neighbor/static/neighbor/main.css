@@ -34,7 +34,7 @@ a, button {
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #000;
+  color: #fff;
 }
 
 .site-header .navbar-nav .nav-link:hover {
@@ -43,16 +43,10 @@ a, button {
 }
 
 .site-header .navbar {
-  background-color: #FCFCFC;
+  background-color: #18422E;
 }
 
-/* .content-section {
-  background: #ffffff;
-  padding: 10px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;
-} */
+
 
 
 
