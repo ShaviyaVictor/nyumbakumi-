@@ -105,7 +105,7 @@ Follow along with this [Deployment Documentation](https://gist.github.com/newton
 This project is licensed under the [MIT License](https://github.com/ShaviyaVictor/ShawardS/blob/main/LICENSE).      
 You can also see the [LICENSE.md](https://github.com/ShaviyaVictor/ShawardS/blob/main/LICENSE) file for details.
 
-### Acknowledgments
+## Acknowledgments
 
 * Corey Schafer
 * Pretty Printed
@@ -113,6 +113,6 @@ You can also see the [LICENSE.md](https://github.com/ShaviyaVictor/ShawardS/blob
 
 ### Author
 
-* **Victor Shaviya**           
-* [LinkedIn](https://www.linkedin.com/in/victor-shaviya-532ab0110/)          
-* [Instagram](https://www.instagram.com/ignition_reads/)
+* **Victor Shaviya**        
+    - [LinkedIn](https://www.linkedin.com/in/victor-shaviya-532ab0110/)          
+    - [Instagram](https://www.instagram.com/ignition_reads/)
