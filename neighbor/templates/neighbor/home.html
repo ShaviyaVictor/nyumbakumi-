@@ -4,51 +4,83 @@
 
 {% block content %}    
   
-  <!-- Form start -->
-  <div class="logform content-section container mt-5">
 
-    <div class="row">
+<body style="background-color: #F1FADF;">
+  
+  <div class="logform">
 
-      <div class="col-sm-6 mx-auto">
-
-        <form method="POST" action="">
-          
-          <!-- Add si-rf tokns here -->
-    
-          <fieldset class="form-group">
-            <legend class="border-bottom mb-4">
-              Login
-            </legend>
-    
-            <!-- Add krispi forms variable here -->
-
-          </fieldset>
-    
-          <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">
-              LOGIN
-            </button>
-            <small class="text-muted ml-2">
-              <a href="#">
-                Forgot password?
-              </a>
+    <!-- Form start -->
+    <div class="content-section container-fluid mt-5">
+  
+      <div class="row">      
+  
+        <div class="col-sm-4 mx-auto formcol-4" style="background: #ffffff;
+        padding: 10px 20px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        margin-top: 6em;">
+  
+          <form method="POST" action="">
+            
+            <!-- Add si-rf tokns here -->
+      
+            <fieldset class="form-group">
+              <legend class="border-bottom mb-4 lego">
+                Enter your neighbourhood name to login
+              </legend>
+      
+              <!-- Add krispi forms variable here -->
+  
+            </fieldset>
+      
+            <div class="form-group">
+              <button class="btn btn-outline-success" type="submit">
+                LOGIN
+              </button>
+              <small class="text-muted ml-2">
+                <a href="#">
+                  Forgot password?
+                </a>
+              </small>
+            </div>
+      
+          </form>
+      
+          <div class="border-top pt-3">
+      
+            <small class="text-muted">
+              Don't have an account?<a href="#" class="ml-2">Register</a>
             </small>
+      
           </div>
-    
-        </form>
-    
-        <div class="border-top pt-3">
-    
-          <small class="text-muted">
-            Don't have an account?<a href="#" class="ml-2">Register</a>
-          </small>
     
         </div>
   
       </div>
-
+  
+      <h2 class="intro-txt">
+        Tap into your<br>
+        <span style="margin-left: 0.8em;">neighborhood...</span>
+      </h2>
+  
     </div>
-
+  
   </div>
+  <!-- Text area -->
+  <div class="container-fluid" style="background-color: #ffffff; padding: 2em;">
+    <h2 class="text-center text-dark">
+      Get the most out of your<br>neighborhood with Nextdoor
+    </h2>
+    <div class="row col-sm-4 mx-auto">
+      <p class="text-center">
+        It's where communities come together to greet newcomers, exchange recommendations, and read the latest local news. Where neighbors support local businesses and get updates from public agencies. Where neighbors borrow tools and sell couches. It's how to get the most out of everything nearby. Welcome, neighbor.
+      </p>
+    </div>
+    
+  </div>
+
+</body>
+
+  
 
 {% endblock content %}  

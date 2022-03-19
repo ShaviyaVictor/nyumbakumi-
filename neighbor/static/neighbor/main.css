@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Lora', serif;
   color: #18422E;
 }
 
@@ -48,6 +48,7 @@ a, button {
   background-color: #18422E;
 }
 
+/* Startof loader styles */
 /* Loader Styling */
 .loaderelement {
   position: absolute;
@@ -70,6 +71,26 @@ a, button {
 @keyframes spin {
   0% { transform: rotate(0 deg); }
   100% { transform: rotate(360 deg); }
+}
+
+/* End of loader styles */
+
+
+
+
+legend.lego {
+  color: #18422E;
+  font-size: 1.2em;
+}
+
+h2.intro-txt {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 3vw;
+  letter-spacing: -0.5px;
+  margin-bottom: 1em;
+  margin-left: -4em;
+  
 }
 
 
@@ -119,7 +140,14 @@ a {
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
+  div.formcol-4 {
+    display: none;
+  }
+  h2.intro-txt {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+  }
 
   
 }
