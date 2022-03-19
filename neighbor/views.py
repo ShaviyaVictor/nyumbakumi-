@@ -1,4 +1,5 @@
 from multiprocessing import context
+from turtle import title
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -43,7 +44,8 @@ n_posts = [
 def home(request) :
 
   context = {
-      'n_posts' : n_posts
+      'n_posts' : n_posts,
+      'title': 'Nyumbakumi'
     }
 
     
@@ -53,16 +55,28 @@ def home(request) :
 
 def neighbor(request) :
 
-  return render(request, 'neighbor/neighbor.html')
+  context = {
+      'title': 'Neighbor'
+    }
+
+  return render(request, 'neighbor/neighbor.html', context)
 
 
 
 def agency(request) :
 
-  return render(request, 'neighbor/agency.html')
+  context = {
+      'title': 'Agency'
+    }
+
+  return render(request, 'neighbor/agency.html', context)
 
 
 
 def business(request) :
 
-  return render(request, 'neighbor/business.html')
+  context = {
+      'title': 'Business'
+    }
+
+  return render(request, 'neighbor/business.html', context)

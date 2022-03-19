@@ -3,12 +3,33 @@
 
   <head>
 
-    <title></title>
+    {% if title %}
+      <title>
+        {{ title }}
+      </title>
+    {% else %}
+      <title>
+        Nyumbakumi
+      </title>
+    {% endif %}
+
 
   </head>
   <body>
     
     <h1>Home Page</h1>
+
+    {% for post in n_posts %}
+      <h1>
+        {{ post.n_title }}
+      </h1>
+      <p>
+        {{ post.n_update }}
+      </p>
+      <small>
+        By {{ post.n_author }}
+      </small>
+    {% endfor %}
 
   </body>
 
