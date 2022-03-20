@@ -4,23 +4,45 @@
 
 {% block content %} 
 
-  <h1 id="test">Neighbor Page</h1>
-
-  {% for post in n_posts %}
-      <h1>
-        {{ post.n_title }}
+  <div class="container">
+    <div class="row" style="background-color: #F1FADF ; margin: 0.5em;">
+      <h1 style="margin: 0.5em;">
+        Updates
       </h1>
-      <h6>
-        {{ post.n_name }} <br>
-        {{ post.n_location }}
-      </h6>
-      <p>
-        {{ post.n_post }}
-      </p>
-      <small>
-        By {{ post.n_author }}  <br>
-        {{ post.n_date_posted|date:'F d, Y' }}
-      </small>
+    </div>
+  </div>
+
+  <div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for post in n_posts %}
+
+    
+      <div class="col-md-3 mt-4">
+        <div class="card">
+          <a href="#">
+            <img src="{{ post.n_image.url }}" class="card-img-top" alt="{{ post.n_title }}" title="{{ post.n_title }}">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title border-bottom pb-2">{{ post.n_title }}</h5>
+            <p class="card-text" style="text-overflow: ellipsis;">
+              {{ post.n_post }}
+            </p>
+            <small class="text-muted">
+              {{ post.n_name }} <span style="float: right;">{{ post.n_location }}</span>
+            </small>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <img class="rounded-circle" style="height: 2em; height: 2em;" src="#" alt="">
+              By <a href="#"><strong>{{ post.n_author }}</strong></a><span style="float: right;">{{ post.n_date_posted|date:'F d, Y' }}</span>
+            </small>
+          </div>
+        </div>
+      </div>
+
+
     {% endfor %}
+  </div>
+</div>
 
 {% endblock content %}  
