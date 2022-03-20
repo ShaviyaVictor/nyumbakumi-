@@ -2,6 +2,7 @@ from multiprocessing import context
 from turtle import title
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Neighbor
 
 
 
@@ -56,6 +57,7 @@ def home(request) :
 def neighbor(request) :
 
   context = {
+      'n_posts': Neighbor.objects.all(),
       'n_posts' : n_posts,
       'title': 'Neighbor'
     }
