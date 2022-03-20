@@ -10,11 +10,16 @@
       <h1>
         {{ post.n_title }}
       </h1>
+      <h6>
+        {{ post.n_name }} <br>
+        {{ post.n_location }}
+      </h6>
       <p>
-        {{ post.n_update }}
+        {{ post.n_post }}
       </p>
       <small>
-        By {{ post.n_author }}
+        By {{ post.n_author }}  <br>
+        {{ post.n_date_posted|date:'F d, Y' }}
       </small>
     {% endfor %}
 
