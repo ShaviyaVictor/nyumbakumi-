@@ -14,3 +14,10 @@ class Neighbor(models.Model) :
   n_post = models.TextField()
   n_author = models.ForeignKey(User, on_delete=models.CASCADE)
   n_date_posted = models.DateTimeField(default=timezone.now)
+
+  def __str__(self) :
+    return self.n_title
+
+
+  class Meta :
+    ordering = ['n_date_posted']
