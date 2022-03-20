@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 class Neighbor(models.Model) :
   n_name = models.CharField(max_length=35)
   n_location = models.CharField(max_length=35)
-  n_image = models.ImageField(upload_to='n_posts/')
+  n_image = models.ImageField(upload_to='n_posts/', blank=True)
   n_title = models.CharField(max_length=100)
   n_post = models.TextField()
   n_author = models.ForeignKey(User, on_delete=models.CASCADE)
