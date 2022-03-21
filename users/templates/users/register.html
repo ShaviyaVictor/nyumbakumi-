@@ -1,55 +1,59 @@
 {% extends 'neighbor/base.html' %}
 
 
-{% load crispy_forms_tags %}
+
 
 
 {% block content %}
 
 
   <!-- Form start -->
-  <div class="content-section container mt-5">
-
-    <div class="row">
-
-      <div class="col-center-box mx-auto" style="background: #ffffff;
-      padding: 10px 20px;
-      border: 1px solid #dddddd;
-      border-radius: 3px;
-      margin-bottom: 20px;">
-
-        <form method="POST" action="">
-          {% csrf_token %}
+  <body style="background-color: #F1FADF ;">
     
-          <fieldset class="form-group">
-            <legend class="border-bottom mb-4">
-              Join your neighborhood
-            </legend>
-    
-            {{ form|crispy }}
+    <div class="content-section container mt-5">
 
-          </fieldset>
-    
-          <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">
-              REGISTER
-            </button>
+      <div class="row">
+  
+        <div class="col-center-box mx-auto" style="background: #ffffff;
+        padding: 10px 20px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        margin-bottom: 20px;">
+  
+          <form method="POST" action="">
+            {% csrf_token %}
+      
+            <fieldset class="form-group">
+              <legend class="border-bottom mb-4">
+                Join your neighborhood
+              </legend>
+      
+              {{ form }}
+  
+            </fieldset>
+      
+            <div class="form-group">
+              <button class="btn btn-outline-success" type="submit">
+                REGISTER
+              </button>
+            </div>
+      
+          </form>
+      
+          <div class="border-top pt-3">
+      
+            <small class="text-muted">
+              Already have an account?<a href="#" class="ml-2">Login</a>
+            </small>
+      
           </div>
-    
-        </form>
-    
-        <div class="border-top pt-3">
-    
-          <small class="text-muted">
-            Already have an account?<a href="#" class="ml-2">Login</a>
-          </small>
     
         </div>
   
       </div>
-
+  
     </div>
 
-  </div>
+  </body>
 
 {% endblock content %}
