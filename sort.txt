@@ -1,1 +1,1 @@
-{% url 'login' %}
+{% url 'password-reset' %}
