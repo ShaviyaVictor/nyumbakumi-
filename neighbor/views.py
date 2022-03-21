@@ -3,6 +3,7 @@ from turtle import title
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Neighbor
+from django.contrib.auth.decorators import login_required
 
 
 
@@ -19,7 +20,7 @@ def home(request) :
   return render(request, 'neighbor/home.html', context)
 
 
-
+@login_required
 def neighbor(request) :
 
   context = {
@@ -30,7 +31,7 @@ def neighbor(request) :
   return render(request, 'neighbor/neighbor.html', context)
 
 
-
+@login_required
 def agency(request) :
 
   context = {
@@ -40,7 +41,7 @@ def agency(request) :
   return render(request, 'neighbor/agency.html', context)
 
 
-
+@login_required
 def business(request) :
 
   context = {
