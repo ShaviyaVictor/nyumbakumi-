@@ -1,6 +1,6 @@
 {% extends 'neighbor/base.html' %}
 
-
+{% load crispy_forms_tags %}
 
 {% block content %}    
   
@@ -23,36 +23,41 @@
           <form method="POST" action="">
             
             <!-- Add si-rf tokns here -->
+            {% csrf_token %}
       
             <fieldset class="form-group">
               <legend class="border-bottom mb-4 lego">
-                Enter your neighbourhood name to login
+                Enter your neighbourhood and get in the know...
               </legend>
       
               <!-- Add krispi forms variable here -->
+              {{ form|crispy }}
   
             </fieldset>
       
             <div class="form-group">
-              <button class="btn btn-outline-success" type="submit">
-                LOGIN
-              </button>
-              <small class="text-muted ml-2">
+              <a href="{% url 'login' %}" class="btn btn-outline-success">
+                <!-- <button class="btn btn-outline-success" type="submit"> -->
+                JOIN THEM
+                <!-- </button> -->
+              </a>
+              
+              <!-- <small class="text-muted ml-2">
                 <a href="#">
                   Forgot password?
                 </a>
-              </small>
+              </small> -->
             </div>
       
           </form>
-      
+<!--       
           <div class="border-top pt-3">
       
             <small class="text-muted">
-              Don't have an account?<a href="#" class="ml-2">Register</a>
+              Don't have an account?<a href="{% url 'register' %}" class="ml-2">Register</a>
             </small>
       
-          </div>
+          </div> -->
     
         </div>
   
@@ -66,6 +71,8 @@
     </div>
   
   </div>
+
+
   <!-- Text area -->
   <div class="container-fluid" style="background-color: #ffffff; padding: 2em;">
     <h2 class="text-center text-dark">
@@ -109,10 +116,18 @@
         <div class="col">
           <!-- Illustration -->
           <h5>Instantly connect with your<br>neighborhood</h5>
-          <div class="buttn mt-4">
-            <button class="btn btn-outline-success" type="submit">
+          <div class="form-group mt-3">
+            <a href="{% url 'register' %}" class="btn btn-outline-success">
+              <!-- <button class="btn btn-outline-success" type="submit"> -->
               REGISTER
-            </button>
+              <!-- </button> -->
+            </a>
+            
+            <!-- <small class="text-muted ml-2">
+              <a href="#">
+                Forgot password?
+              </a>
+            </small> -->
           </div>
         </div>        
       </div>
