@@ -6,6 +6,7 @@ from .models import Neighbor
 
 
 
+
 # Create your views here.
 def home(request) :
 
