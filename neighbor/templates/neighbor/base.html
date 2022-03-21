@@ -120,7 +120,16 @@
     <!-- End of the NavBar -->
     
     <!-- Start of the main section -->
-    
+    <div class="container">
+    {% if messages %}
+      {% for message in messages %}
+      <div class="text-center mt-2 alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+
+      {% endfor %}
+    {% endif %}   
+    </div> 
 
           <div class="loaderelement">
             <span class="spinner">
