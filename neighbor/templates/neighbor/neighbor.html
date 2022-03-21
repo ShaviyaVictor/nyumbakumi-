@@ -17,7 +17,7 @@
   {% for post in n_posts %}
 
     
-      <div class="col-md-3 mt-4">
+      <div class="col-md-4 mt-4">
         <div class="card">
           <a href="#">
             <img src="{{ post.n_image.url }}" class="card-img-top" alt="{{ post.n_title }}" title="{{ post.n_title }}">
@@ -27,7 +27,7 @@
             <p class="card-text" style="text-overflow: ellipsis;">
               {{ post.n_post }}
             </p>
-            <small class="text-muted">
+            <small class="text-muted" style="text-decoration: underline;">
               {{ post.n_name }} <span style="float: right;">{{ post.n_location }}</span>
             </small>
           </div>
