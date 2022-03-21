@@ -69,13 +69,14 @@
 
 
               <!-- Removed content section for the Navbar -->
+              {% if user.is_authenticated %}
 
               <!-- Profile section -->
               <a class="nav-item nav-link" href="#">
                 PROFILE
               </a>
 
-              
+              {% endif %}
 
             </div>
 
@@ -83,10 +84,15 @@
               <!-- Navbar Right Side section -->
               <div class="navbar-nav font-weight-bold">
 
+                {% if user.is_authenticated %}
                 
                 <a class="nav-item nav-link mr-3" href="#">POST</a>
+
+                {%   else%}
   
                 <a class="nav-item nav-link mr-3" href="{% url 'register' %}">REGISTER/LOGIN</a>
+
+                {% endif %}
   
                 
                 <form class="d-flex">
@@ -97,10 +103,14 @@
               </div>
   
               <div class="navbar-nav font-weight-bold">
+
+                {% if user.is_authenticated %}
   
                 <a class="nav-item nav-link" href="#">
                   LOGOUT
                 </a>
+
+                {% endif %}
   
   
               </div>
