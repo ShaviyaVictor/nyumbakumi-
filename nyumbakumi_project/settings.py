@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     'neighbor.apps.NeighborConfig',
     'users.apps.UsersConfig',
+    'crispy_forms',
 
     'django.contrib.admin',
     'django.contrib.auth',
