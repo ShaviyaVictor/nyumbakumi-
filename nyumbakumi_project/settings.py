@@ -136,6 +136,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'neighbor-neighbor'
 
+LOGIN_URL = 'login'
+
 
 
 
