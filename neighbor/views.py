@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Neighbor
 from django.contrib.auth.decorators import login_required
-
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
 
@@ -20,15 +20,28 @@ def home(request) :
   return render(request, 'neighbor/home.html', context)
 
 
-@login_required
-def neighbor(request) :
+class PostListView(ListView) :
+  model = Neighbor
 
-  context = {
-      'n_posts': Neighbor.objects.all(),
-      'title': 'Neighbor'
-    }
+  # <app>/<model>_<viewtype>.html
+  template_name = 'neighbor/neighbor.html'
 
-  return render(request, 'neighbor/neighbor.html', context)
+  context_object_name = 'n_posts'
+
+  title = 'Neighbor'
+
+  ordering = ['-n_date_posted']
+
+
+# @login_required
+# def neighbor(request) :
+
+#   context = {
+#       'n_posts': Neighbor.objects.all(),
+#       'title': 'Neighbor'
+#     }
+
+#   return render(request, 'neighbor/neighbor.html', context)
 
 
 @login_required
