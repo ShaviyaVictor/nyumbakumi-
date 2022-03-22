@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from .models import Neighbor
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
@@ -21,7 +22,7 @@ def home(request) :
 
 
 
-class PostListView(ListView) :
+class NeighborListView(ListView) :
   model = Neighbor
 
   # <app>/<model>_<viewtype>.html
@@ -43,6 +44,25 @@ class PostListView(ListView) :
 #     }
 
 #   return render(request, 'neighbor/neighbor.html', context)
+
+
+# Post Detail View
+class NeighborDetailView(DetailView) :
+  model = Neighbor
+
+
+# Post Create View
+class NeighborCreateView(LoginRequiredMixin, CreateView) :
+  model = Neighbor
+  fields = [
+    'n_name',
+    'n_image',
+    'n_location',
+    'n_title',
+    'n_post',
+    'n_author'
+
+  ]
 
 
 @login_required

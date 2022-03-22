@@ -1,0 +1,47 @@
+{% extends 'blog/base.html' %}
+
+
+
+
+{% block content %}
+
+  
+
+
+<!-- Trying out a different view style -->
+
+
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 mt-5 pt-5">
+
+      <div class="row z-depth-3">
+        
+        <div class="col-sm-8 bg-transparent rounded-left mx-auto border">
+          <div class="card-block pt-3">
+            <img src="{{ object.n_image.url }}" class="card-img-top" alt="{{ object.n_name }}">
+            <h5 class="card-title border-bottom pt-3 pb-3">{{ object.n_title }}</h5>
+            <p class="card-text"><img class="rounded-circle" style="height: 2em; height: 2em;" src="{{ object.author.profile.n_image.url }}" alt="">
+              <!-- By <a href="{% url 'user_posts' post.author.username %}"><strong>{{ object.author }}</strong></a> -->
+            </p>
+            <div class="card-footer">
+              {% if object.author == user %}
+                <a class="btn btn-outline-info btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}">UPDATE</a>
+                <!-- <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}">DELETE</a> -->
+              {% endif %}
+              <small class="text-muted mb-2" style="float: right;">{{ object.n_date_posted|date:'F d, Y' }}</small>              
+            </div>        
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Start of the image cards -->
+  
+
+{% endblock content %}
