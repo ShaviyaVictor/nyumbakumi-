@@ -1,0 +1,1 @@
+web: gunicorn nyumbakumi_project.wsgi 
