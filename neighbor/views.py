@@ -20,6 +20,7 @@ def home(request) :
   return render(request, 'neighbor/home.html', context)
 
 
+
 class PostListView(ListView) :
   model = Neighbor
 
