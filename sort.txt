@@ -1,4 +1,0 @@
-{% url 'password-reset' %}
-
-
-{% url 'update_profile' %}
