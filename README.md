@@ -2,11 +2,8 @@
 
 This is a web application that allows users to be in the loop about everything happening in their neighborhood. From contact information of different handyman to meeting announcements or even alerts.       
 Below is the project's screenshots:     
-![nyumbakumi!_Home.Pg_Screenshot](#)        
-![nyumbakumi!_Neighbors.Pg_Screenshot](#)          
-![nyumbakumi!_Agency.Pg_Screenshot](#)          
-![nyumbakumi!_Business.Pg_Screenshot](#)          
-![nyumbakumi!_Profile.Pg_Screenshot](#)          
+![nyumbakumi!_Home.Pg_Screenshot](https://github.com/ShaviyaVictor/nyumbakumi-/blob/main/media/Home.png)                
+![nyumbakumi!_Profile.Pg_Screenshot](https://github.com/ShaviyaVictor/nyumbakumi-/blob/main/media/Profile.png)          
 
 
 #### Live link to site
